@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GroundTrace WebMCP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">GROUNDTRACE / WEBMCP</p>
+    <h1>Memory is a candidate.<br>Not authority.</h1>
+    <p class="lede">A browser-agent interface to warranted operational memory. GroundTrace retrieves precedent, then admits it as <strong>RELY</strong>, <strong>HOLD</strong>, or <strong>REJECT</strong> before an agent may use it.</p>
+
+    <section class="panel">
+      <div>
+        <h2>Agent surface</h2>
+        <p id="status">Checking WebMCP…</p>
+      </div>
+      <ul>
+        <li><code>groundtrace_recall</code> — find precedent and evaluate its warrant.</li>
+        <li><code>groundtrace_remember</code> — preserve a resolved incident with provenance.</li>
+        <li><code>groundtrace_explain</code> — inspect why GroundTrace relied, held, or rejected.</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Last GroundTrace result</h2>
+      <pre id="output">No result yet.</pre>
+    </section>
+
+    <p class="foot">WebMCP extension only. The pre-existing GroundTrace Memory engine remains frozen as a separate AWS/CockroachDB competition artifact.</p>
+  </main>
+  <script src="config.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
